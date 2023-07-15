@@ -13,15 +13,7 @@ public class DataParser {
     }
 
     public static String parsePhoneNumber(String phoneNumberStr) throws InvalidDataException {
-        try {
-            int phoneNumber = Integer.parseInt(phoneNumberStr);
-            if (phoneNumber < 1000000 || phoneNumber > 9999999) {
-                throw new InvalidDataException("Неверный формат номера телефона");
-            }
             return phoneNumberStr;
-        } catch (NumberFormatException e) {
-            throw new InvalidDataException("Неверный формат номера телефона");
-        }
     }
 
     public static char parseGender(String genderStr) throws InvalidDataException {

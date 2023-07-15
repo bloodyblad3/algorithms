@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите данные (Фамилия Имя Отчество ДатаРождения НомерТелефона Пол):");
+        System.out.println("Введите данные (Фамилия, Имя, Отчество, Дата Рождения, Номер Телефона, Пол):");
         String input = scanner.nextLine();
         String[] data = input.split(" ");
 
